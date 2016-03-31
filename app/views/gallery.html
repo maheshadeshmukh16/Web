@@ -1,0 +1,71 @@
+<script>
+	$( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    ); 
+});
+</script>
+<div class="container">
+    <div class="col-lg-12 parent centered">
+        <div class="col-lg-11 col-sm-offset-1 middle_body">
+            <div class="gallery">
+              <!--  <div class="col-lg-4">
+                    <div class="gallery_images">
+                        <img src="images/fort.jpg" style="height:120px;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="gallery_images">
+                        <img src="images/fort.jpg" class="img-responsive" style="height:120px;">
+                        <div class="caption">
+                        <h4>Fort</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="gallery_images">
+                        <img src="images/fort.jpg" class="img-responsive" style="height:120px;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="gallery_images">
+                        <img src="images/fort.jpg" style="width:305px;height:170px;">
+                        <div class="caption">
+                        <h4>Fort</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="gallery_images">
+                        <img src="images/fort.jpg" style="height:120px;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="gallery_images">
+                        <img src="images/fort.jpg" style="height:120px;">
+                    </div>
+                </div>
+            </div>
+        </div>-->
+		<div class="row">
+        <div class="col-md-3 thumbnail">            
+                <div class="caption">
+                    <h4>Thumbnail Headline</h4>
+                    <p>short thumbnail description</p>
+                    
+                </div>
+                <img src="images/fort.jpg" alt="..." style="height:160px;">
+            </div>
+      </div>
+      
+        
+  </div>
+    </div>
+	</div>
